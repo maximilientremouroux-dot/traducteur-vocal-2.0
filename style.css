@@ -3,10 +3,12 @@ body {
   text-align: center;
   background-color: #f0f0f0;
   margin: 50px;
+  font-size: 20px; /* Plus grand texte */
 }
 
 h1 {
   color: #333;
+  font-size: 2.5em; /* Titre bien visible */
 }
 
 .container {
@@ -14,16 +16,35 @@ h1 {
 }
 
 textarea {
-  width: 300px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
-  font-size: 16px;
+  width: 400px; /* Plus large */
+  height: 150px; /* Plus haute */
+  margin: 15px;
+  padding: 15px;
+  font-size: 18px; /* Texte plus grand */
 }
 
 button {
-  font-size: 16px;
-  padding: 10px 15px;
-  margin: 5px;
+  font-size: 18px; /* Boutons plus grands */
+  padding: 15px 20px;
+  margin: 10px;
   cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Ajout des petits emojis et des mots "bonjour" dans différentes langues */
+.emoji {
+  font-size: 30px; /* Des emojis bien visibles */
+  margin: 10px;
+}
+
+.langue {
+  font-size: 1.5em;
+  margin: 10px 0;
 }
