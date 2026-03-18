@@ -14,26 +14,24 @@
   <!-- Section Traducteur -->
   <div class="container">
     <h2>Entrez votre texte</h2>
-    <!-- Sélecteur de langue source -->
-    <label for="langueSource">Langue source :</label>
-    <select id="langueSource">
-      <option value="fr">Français</option>
-      <option value="nl">Néerlandais</option>
-      <option value="en">Anglais</option>
-      <option value="ja">Japonais</option>
-    </select>
-
-    <!-- Sélecteur de langue cible -->
-    <label for="langueCible">Langue cible :</label>
-    <select id="langueCible">
-      <option value="en">Anglais</option>
-      <option value="nl">Néerlandais</option>
-      <option value="fr">Français</option>
-      <option value="ja">Japonais</option>
-    </select>
-
     <textarea id="texteOriginal" placeholder="Dis quelque chose ou écris ici..."></textarea>
     <div class="boutons">
       <button id="btnParler">🎤 Parler</button>
-      <button
-        
+      <button id="btnLire">📢 Lire</button>
+    </div>
+    <h2>Traduction</h2>
+    <textarea id="texteTraduit" placeholder="La traduction apparaît ici..." readonly></textarea>
+  </div>
+  
+  <!-- Widget Google Traduction -->
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
