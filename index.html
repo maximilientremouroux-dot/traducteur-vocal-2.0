@@ -2,26 +2,33 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Site Traducteur</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #eed9cb;">
-  <!-- Titre de la marque -->
+  
+  <!-- Titre principal -->
   <h1>VoxBridge - Le pont de la voix</h1>
-
+  
+  <!-- Section Traducteur -->
   <div class="container">
+    <h2>Entrez votre texte</h2>
     <textarea id="texteOriginal" placeholder="Dis quelque chose ou écris ici..."></textarea>
-    <button id="btnParler">🎤 Parler</button>
-    <button id="btnLire">📢 Lire</button>
+    <div class="boutons">
+      <button id="btnParler">🎤 Parler</button>
+      <button id="btnLire">📢 Lire</button>
+    </div>
+    <h2>Traduction</h2>
     <textarea id="texteTraduit" placeholder="La traduction apparaît ici..." readonly></textarea>
   </div>
-
+  
   <!-- Widget Google Traduction -->
   <div id="google_translate_element"></div>
   <script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
-  }
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+    }
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
